@@ -1,0 +1,96 @@
+
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #1d1d1d, #202020);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.calendar-container {
+    background: #1f1f1f;
+    border-radius: 12px;
+    padding: 20px;
+    width: 320px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+    color: #fff;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.calendar-header h2 {
+    font-size: 1.4rem;
+}
+
+.calendar-header button {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.calendar-header button:hover {
+    background: #007bff;
+}
+
+
+.calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+    margin-bottom: 10px;
+    color: #aaa;
+    font-weight: 500;
+}
+
+
+.calendar-dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+.calendar-dates div {
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.calendar-dates div:hover {
+    background: #007bff;
+    color: #fff;
+}
+
+.calendar-dates .today {
+    background: #ff4b5c;
+    color: #fff;
+}
+@media screen and (max-width: 360px) {
+    .calendar-container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .calendar-header h2 {
+        font-size: 1.2rem;
+    }
+}
